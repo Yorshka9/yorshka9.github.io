@@ -1,0 +1,274 @@
+
+
+body {
+    font-family: 'Crimson Text', sans-serif;
+    color: #222;
+    text-align: center;
+    background-color: #fff;
+    color: #5C5C58;
+    font-size: 18px;
+}
+
+body p {
+    padding: 10px 30px 50px;
+}
+a {
+    color: #5C5C58;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.main-header h1 a {
+    color: #5C5C58;
+    text-decoration: none;
+    font-size: 44px;
+ 
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+
+.portfolio-pic {
+    
+    width: 85%;
+}
+
+.profile-image {
+    padding-top: 20px;
+    max-width: 85%;
+}
+
+header,
+footer {
+    background-color: #fafbfd;
+  
+}
+
+.main-header {
+
+    padding-top: 1px;
+}
+
+.main-nav {
+    list-style-type: none;
+    position:relative;
+    top: 0;
+}
+
+.main-nav a {
+    display: block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 7px;
+    color: #5C5C58;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.name a {
+    text-decoration: none;
+    background-color: #fafbfd;      
+    }
+
+/******* FOOTER *******/ 
+
+footer a:hover {
+	color: #093a58;
+}
+
+
+
+footer {
+    padding-bottom: 1px;
+
+}
+
+footer h2 {
+    padding-top: 20px;
+}
+
+
+.footer-end {
+    overflow: hidden;
+}
+
+.footer-end li {
+    display: inline-block;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 22px;    
+}
+
+.left {
+    float: left;
+    padding-left: 50px;
+}
+
+.right-home,
+.right-portfolio,
+.right-contact {
+    float: right;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: none !important;
+}
+
+.right-back-to-top {
+    float: right;
+    padding-right: 50px;
+
+}
+
+footer p {
+    padding-left: 60px;
+    padding-right: 60px;
+    
+}
+
+
+
+
+/******* MEDIA QUERIES ********/ 
+
+/****** TABLET *******/
+
+@media (min-width: 768px) {
+    
+    .main-header {
+        overflow: hidden;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        
+    }
+    
+    .main-nav li a {
+        width: 33%;
+        display: inline-block;
+        background-color: #fafbfd;
+    }
+
+    .profile-image {
+        width: 40%;
+        float: right;
+        padding-right: 30px;
+        padding-left: 15px;
+        
+    }
+
+    .name a {
+        text-decoration: none;
+        background-color: #fafbfd;      
+        }
+    
+    .nav-text {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    .portfolio-item {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .right-home,
+    .right-portfolio,
+    .right-contact {
+    float: right;
+    text-indent: 0;
+    white-space: normal;
+    overflow: visible;
+    padding-left: 5px;
+    padding-right: 20px;
+    display: inline-block !important;
+}
+
+    .right-back-to-top {
+    float: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: none !important;
+    
+
+}
+    
+}
+
+/******** DESKTOP *********/
+
+@media (min-width: 1024px) {
+
+    .name a {
+        text-decoration: none;
+        background-color: #fafbfd;
+        padding-left: 6%;
+        
+        
+        
+    }
+    .nav-text {
+
+        margin-left: 5%;
+        padding-right: 50px;
+    }
+    
+    .profile-image {
+        padding-left: 25%;
+        padding-right: 7%;
+        width: 35%;
+    }
+    
+
+    .portfolio-item {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .right-home,
+    .right-portfolio,
+    .right-contact {
+    float: right;
+    text-indent: 0;
+    white-space: normal;
+    overflow: visible;
+    padding-left: 5px;
+    padding-right: 30px
+}
+
+    .main-nav a, 
+    .main-nav li a {
+        display: inline-block;
+        float: left;
+    }
+
+    li  {
+        float: right;
+        padding-right: 5.5%;
+          
+    }
+
+    .clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+

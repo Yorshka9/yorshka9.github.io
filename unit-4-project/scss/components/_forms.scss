@@ -1,0 +1,12 @@
+.form {
+    &__label--hidden {
+        display: none;
+    }
+    &__input {
+        @include center(90%);
+        padding: 14px;
+        border: none;
+        border-bottom: 5px solid $color-primary;
+        margin-bottom: 10px;
+    }
+}

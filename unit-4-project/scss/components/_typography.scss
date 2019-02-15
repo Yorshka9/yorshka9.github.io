@@ -1,0 +1,34 @@
+.headline--secondary {
+    width: 90%;
+    margin: 30px 0;
+}
+
+.headline--primary {
+    color: $color-primary;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+.blockquote {
+
+    padding-left: 20px;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border-left: 10px solid $color-primary;
+}
+
+.container {
+    .headline--secondary {
+        @include center();
+    }
+}
+
+.link {
+    color: $color-secondary;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+.grid__row {
+    @include center();
+    margin-bottom: 50px;
+
+    @include media('lg') {
+        @include flex();
+        max-width: 1120px;
+    }
+}
+
+
+@for $i from 2 through 12 {
+    .grid__col--#{$i} {
+        @extend %grid__col;
+    }
+    //Go around the color wheel to assign colors to grid display cols
+    .grid__col--#{$i}.theme__colors {
+        background-color: adjust-hue($color: #E5FFB6, $degrees: -20 * $i);
+    }
+
+    @include media('lg') {
+        .grid__col--#{$i} {
+            width: 100% / 12 * $i - 2%;
+            @include addGutter();
+        }
+    }
+}
+
+.centered {
+    margin: auto;
+}
