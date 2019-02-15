@@ -1,0 +1,30 @@
+.nav {
+    @include flex($dir: column);
+    @include media('lg') {
+        @include flex($dir: row);
+        margin-top: 60px;
+    }
+    .nav__item {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 5px;
+        a {
+            text-decoration: none;
+            color: #696969;
+            display: block;
+            line-height: 3;
+            @include radius();
+            transition: 0.4s ease;
+            @include media('lg') {
+                padding: 0 20px;
+            }
+            &:hover {
+                color: white;
+                background: #58E1C1;
+            }
+        }
+        @include media('lg') {
+            margin-right: 10px;
+        }
+    }
+}

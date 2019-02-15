@@ -1,0 +1,15 @@
+.img {
+    &--logo {
+        @extend %img;
+    }
+    &--avatar {
+        @extend %img;
+    }
+    &--frame {
+        @extend %img;
+        padding: 4%;
+        margin: 20px auto;
+        border: 1px solid $color-tertiary;
+        @include responsive();
+    }
+}

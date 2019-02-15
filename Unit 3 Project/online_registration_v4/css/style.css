@@ -1,0 +1,226 @@
+
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #F5F5F5;
+  }
+  
+  .container,
+  header {
+    width: 85%;
+    margin: auto;
+
+
+  }
+
+    .content {
+    max-width: 100%;
+    }
+
+  .banner {
+    text-align: center;
+    background: #2D3945;
+  }
+
+  .banner h1 {
+    margin: 0px;
+    color: white;
+    line-height: 3;
+  }
+
+  footer {
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      color: #808080;
+      font-weight: bold;
+      font-style: italic;
+      
+  }
+  
+  .top_p {
+    text-align: center;
+}
+
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  textarea,
+  select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+  }
+  
+  button {
+    width: 100%;
+    font-size: 24px;
+    line-height: 3;
+    color: white;
+    border: none;
+    background-color: #4EBBB5;
+    cursor: pointer;
+
+  }
+
+
+input::placeholder {
+  text-align: right;
+}
+  
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;    
+  }
+
+  .fieldset_one {
+    border-bottom: 2px solid #2D3945;
+    padding:inherit;
+  }
+
+  .fieldset_two {
+  padding:inherit;
+  
+  }
+
+  .fieldset_two textarea {
+  padding:inherit;
+  
+  }
+
+
+  .content {
+    border-top: 2px solid #2D3945;
+    margin-top: 3px;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    padding-top: 15px;    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.newsletter_label {
+    font-weight: 300;
+    display: inline;
+  }
+
+  .fieldset_one input,
+  textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 1;
+  font-size: 0.8em;
+  padding: 15px 15px;
+  border: 2px solid transparent;
+
+}
+
+.fieldset_one select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 1;
+    font-size: 0.8em;
+    border: 2px solid transparent;
+
+}
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+  border: 2px solid #46698B;
+  outline: none;
+  
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 4px solid #2D3945;
+    padding: 20px 0;
+  }
+  
+  .fieldset_one input[name="zip"] {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+
+    .fieldset_one .input_items {
+      display: flex;
+      align-items: baseline;
+      
+    }
+    
+    label {
+        margin: 0;
+    }
+
+    .fieldset_one .input_items label {
+        flex: 1 0 20%;
+    }
+
+    .fieldset_one .input_items  {
+        flex: 0 0 20%;
+
+    }
+     
+         .fieldset_one .input_items label[for="zip"] {
+        flex: 0 0 20%;
+        
+ 
+    }
+     
+
+    #zip  {
+        width: 15%;
+    }
+     
+
+     .input_items label {
+
+      margin: 0;
+
+    }
+    
+  .container, 
+    header {
+      width: 40%;
+
+    }
+    
+
+ 
+
+
+  }
