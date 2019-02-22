@@ -1,3 +1,0 @@
-issue to fix. 
-
-1-Command not firing on first click (JavaScript)
