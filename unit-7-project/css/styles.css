@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -190,7 +190,7 @@ h2{
     transition-duration: .5s;   
 }
 
-#bell-alerts{
+#bell_alerts{
     background: none;
     padding: .5em;
     width: 20em;
@@ -201,7 +201,7 @@ h2{
     left: auto;
 }
 
-#bell-alerts p{
+#bell_alerts p{
     background:#FCF9E9;
     color:black;
     display:flex;
@@ -209,6 +209,8 @@ h2{
     padding: .8em;
     margin:0;
     border-bottom: 1px solid #D3D3D3;
+    font-size: 15px;
+    width: 50%;
     
 }
 .green_dots{
@@ -222,7 +224,7 @@ h2{
     color: black;
     
 }
-#bell-alerts p .x{
+#bell_alerts p .x{
     color:black;
     margin-left: auto;
     cursor: pointer;
@@ -280,6 +282,10 @@ h3{
     border-left:1px solid #A9ACB6;
 }
 
+/*=======================
+    SOCIAL MEDIA DATA        
+=======================*/
+
 .social_stats{
     margin: 2em 0;
     display: flex;
@@ -301,7 +307,6 @@ h3{
     justify-content: space-between;
     border: 1px solid #A9ACB6;
     margin-bottom:1em;
-   
     padding: 1em;
 }
 .icons{
@@ -316,12 +321,7 @@ h3{
 
 .social_icons img{
     width: 2em;
-    color: white;
-    
-   
-}
-.social_icons svg{
-    fill:white;
+    color: white;    
 }
 
 .social_data{
@@ -337,7 +337,7 @@ h3{
 .social_data p{
     color:#A9ACB6 ;
     font-weight:300;
-    font-size:2em;
+    font-size:1.7em;
     margin-top: 0;
 }
 

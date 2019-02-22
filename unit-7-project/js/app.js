@@ -30,10 +30,13 @@ Array.from(date).forEach(function(e){
 
 
 
-  // when clicking 'X' on the bell icon alert, remove the element 
+  // when clicking on the text on the bell icon alerts, remove the alert
+  // (previously was for the 'X' but on mobile it was difficult to press it 
+  //  so I changed it to cover the whole text instead in order to make it
+  //  easier for mobile users)
 
 $(document).ready(function(){
-    $(".x").click(function(e){
+    $(".message").click(function(e){
         var alert = $(this).closest("p");
             alert.fadeOut( "slow", function() {
             alert.remove();
@@ -42,7 +45,7 @@ $(document).ready(function(){
     
     
   $("#bell").click(function(){
-    $("#bell-alerts").fadeToggle( "slow", "linear");
+    $("#bell_alerts").fadeToggle( "slow", "linear");
     $("#bell_green_dot").fadeToggle();
   });
     
@@ -106,6 +109,8 @@ $(".toggle").click(function() {
         localStorage.removeItem("favorite");
     }
 });
+
+
 
   $(".selectTimeZone").change(function(){
         var key = $(this).attr("id");

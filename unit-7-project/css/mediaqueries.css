@@ -168,8 +168,7 @@
     .social-data p{
         color:#A9ACB6 ;
         font-weight:300;
-        font-size:2em;
-        margin-top: 0;
+        font-size:1.8em;
     }
         
     .members_section{
@@ -221,6 +220,12 @@
             flex-direction: column;
             border-right:1px solid #A9ACB6;
         }
+
+    #bell_alerts p{
+    width: 100%;
+    font-size: 13px;
+    
+}
        
     }
     /*=======================
@@ -278,5 +283,6 @@
     .second_toggle {
         width: 55%;
     }
+
     
-    }
+}
