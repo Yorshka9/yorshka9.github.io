@@ -1,29 +1,8 @@
 
 
-$(document).ready(function(){
-    $(".x").click(function(e){
-        var alert = $(this).closest("p");
-            alert.fadeOut( "slow", function() {
-            alert.remove();
-  });
-    });
-    
-    
-  $("#bell").click(function(){
-    $("#header_alerts").fadeToggle( "slow", "linear");
-    $("#bell_green_dot").fadeToggle();
-  });
-    
-  $("#x").click(function(e){
-     var alert = $(this).closest("p");
-            alert.fadeOut( "slow", function() {
-            alert.remove();
-  });
-    });
-});
 
+// sets the date to today's date
 
-// today's date
 var date = document.getElementsByClassName("dates");
 
 
@@ -50,29 +29,58 @@ Array.from(date).forEach(function(e){
 
 
 
-var searchUser=$("#searchUser");
-var members = $(".newMembersCard");
+
+  // when clicking 'X' on the bell icon alert, remove the element 
+
+$(document).ready(function(){
+    $(".x").click(function(e){
+        var alert = $(this).closest("p");
+            alert.fadeOut( "slow", function() {
+            alert.remove();
+  });
+    });
+    
+    
+  $("#bell").click(function(){
+    $("#bell-alerts").fadeToggle( "slow", "linear");
+    $("#bell_green_dot").fadeToggle();
+  });
+    
+    // when clicking 'X' on the chart header alert, remove the element 
+  $("#x").click(function(e){
+     var alert = $(this).closest("p");
+            alert.fadeOut( "slow", function() {
+            alert.remove();
+  });
+    });
+});
+
+
+// filter out members if user types in a matching letter or name
+
+var searchUser=$("#searchMember");
+var members = $(".new_members_card");
 
 searchUser.keyup(function(){
          var value = $(this).val().toLowerCase();
-         $(".newMembersCard p").filter(function(){
+         $(".new_members_card p").filter(function(){
               $(this).parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1);
          });
     
 });
-/*=====================================================================
-                    From Submit
-=======================================================================*/
+
+    // alert the user with 'message sent' when message is submitted and both fields
+    // are filled
 
 
     $("#send").click(function(e){
         
         e.preventDefault();
    if($("#searchUser").val()=='' || $("#textmessage").val()==''){
-       alert('I am sorry. Both fields should be filed');
+       alert('Please fill in both fields.');
    } else{
        $("#message").submit();
-       alert("Thank you. Your message has been sent!");
+       alert("Message sent!");
    }
    
     });
@@ -80,9 +88,7 @@ searchUser.keyup(function(){
 
 
 
-/*======================================================================
-        save settings to local storage
-=======================================================================*/
+    // store settings in local storage
 
 $(function() {
     var checkBox = localStorage.getItem("settingbtn");
@@ -109,8 +115,6 @@ $(".toggle").click(function() {
   var inputValue= JSON.parse(localStorage.getItem('inputValue')) || {};
   
 
-
- 
   $(".timeZones").each(function(){
       var key = $(this).attr('id');
       if(localStorage.getItem(key)){
@@ -119,4 +123,12 @@ $(".toggle").click(function() {
   });
 
 
+    // when 'label' is clicked (hourly, daily, weekly, monthly), change background color
+    // of the selected li element
 
+    var $li = $('#labels li').click(function() {
+        $li.removeClass('selected');
+        $(this).addClass('selected');
+    });
+    
+    

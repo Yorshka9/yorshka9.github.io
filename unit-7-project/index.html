@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="grid-container">
         <header>
-            <div class="branding"> 
-                <h1>Web<span>App&trade;</span></h1>
+            <div class="logo"> 
+                <h1>WebApp<span>&trade;</span></h1>
             </div>
             <div class="avatar_bell_div">
                 <div class="bell_icon_div">
@@ -31,20 +33,20 @@
                             
                         </svg>
 
-                    <div id="header_alerts">
+                    <div id="bell-alerts">
                 
-                        <P class="header_alert"><span class="green_dots"></span><span class="message">You have 6 unread messages</span><span class="x">X</span></P>
+                        <p><span class="green_dots"></span><span class="message">You have 6 unread messages</span><span class="x">X</span></p>
 
-                        <P class="header_alert"><span class="green_dots"></span><span class="message">You have 8 new followers</span> <span class="x">X</span></P>
+                        <p><span class="green_dots"></span><span class="message">You have 3 new followers</span> <span class="x">X</span></p>
 
-                        <P class="header_alert"><span class="green_dots"></span><span class="message">Your password expires in 7 days</span><span class="x">X</span></P>
+                        <p><span class="green_dots"></span><span class="message">Your password expires in 7 days</span><span class="x">X</span></p>
                 
                     </div>
                 </div>
             
                 <div class="header_avatar_div">
-                    <img id="avatar" src="images/member-1.jpg" alt="a member avatar">
-                    <p id="name">Megan C.</p>
+                    <img id="avatar" src="images/member-3.jpg" alt="user avatar">
+                    <p id="name">Dawn Wood</p>
                 </div>
             </div>
             
@@ -69,7 +71,7 @@
                     </svg>
             </a>
 
-            <a href="#" id="members_link" class="sidebar_icon">
+            <a href="#message" id="members_link" class="sidebar_icon">
                     <svg version="1.1" id="Line_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
             
@@ -88,7 +90,7 @@
             
             </a>
 
-            <a href="#" id="visits_link" class="sidebar_icon">
+            <a href="#barChart" id="visits_link" class="sidebar_icon">
                     <svg version="1.1" id="Line_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                     <g id="_x35__10_">
@@ -104,7 +106,7 @@
             
             </a>
 
-            <a href="#" id="settings_link" class="sidebar_icon"> 
+            <a href="#message" id="settings_link" class="sidebar_icon"> 
                     <svg version="1.1" id="Line_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                     <g id="_x32__16_">
@@ -128,14 +130,14 @@
 
         <main>
             <div class="chart_header">
-                <div class="dashboardSearch">
-                    <h2 id="main_title">Dashboard</h2>
+                <div class="search-dashboard">
+                    <h2>Dashboard</h2>
                     <div class="search_div">
                         <input id="search" type="text" placeholder="Search">
                         <i class="fas fa-search search_icon"></i>
                     </div>
                 </div>
-            <p id="chartAlert">This is an alert ! <span id="x">X</span></p>
+            <p id="popup_alert">Alert!  Chart data is from Thursday due to a system update that ran overnight. <span id="x" style="cursor:pointer;">X</span></p>
             <div class="chartNav">
                 <h3>TRAFFIC</h3>
                 <ul id="labels">
@@ -147,12 +149,12 @@
             </div>
           </div>
             <div id="charts_div">
-                <div class="lineChart_div">
+                <div class="div_linechart">
                     <canvas id="lineChart">
 
                     </canvas>
                 </div>
-                <div class="bar_doughnut_div">
+                <div class="div-doughnut-bar">
                   <div class="bar"><h3>Daily TRAFFIC</h3> <canvas id="barChart" ></canvas></div>
                     <div class="doughnut"><h3>Mobile Users</h3><canvas id="doughnutChart"></canvas></div>
                 </div>
@@ -164,7 +166,7 @@
                         <div class="icons">
                             <img src="icons/icon-twitter.svg" alt="twitter icon">
                         </div>
-                        <div class="incons_data">
+                        <div class="social_data">
                             <h4>Twitter</h4>
                             <p>10,345</p>
                         </div>
@@ -173,7 +175,7 @@
                         <div class="icons">
                             <img src="icons/icon-facebook.svg" alt="facebook icon">
                         </div>    
-                        <div class="incons_data">
+                        <div class="social_data">
                             <h4>Facebook</h4>
                             <p>8,739</p>
                         </div>
@@ -182,22 +184,20 @@
                         <div class="icons">
                             <img src="icons/icon-google-plus.svg" alt="google plus con">
                         </div>
-                        <div class="incons_data">
+                        <div class="social_data">
                         <h4>Google+</h4>
                         <p>2,530</p>
                         </div>
                     </div>
                 </div>        
             </div>
-            <!=======================================================
-                                member container
-            =========================================================-->
-            <div class="members_container">
+
+            <div class="members_section">
                 <div class="newMembers">
                     <h3>New Members</h3>
-                    <div class="newMembers_wrapper">
+                    <div class="newMembers_container">
                         
-                        <div class="newMembersCard">
+                        <div class="new_members_card">
                             <img src="images/member-1.jpg" alt="picture of Victoria Chambers">
                             <div>
                                 <p>Victoria Chambers</p>
@@ -206,7 +206,7 @@
                              <span class="dates"> </span>
                         </div>
                         
-                        <div class="newMembersCard">
+                        <div class="new_members_card">
                             <img src="images/member-2.jpg" alt="picture of Dale Byrd">
                             <div>
                                 <p>Dale Byrd</p>
@@ -215,7 +215,7 @@
                              <span class="dates"> </span>
                         </div>
                         
-                        <div class="newMembersCard">
+                        <div class="new_members_card">
                             <img src="images/member-3.jpg" alt="picture of Dawn Wood">
                             <div>
                                 <p>Dawn Wood</p>
@@ -224,7 +224,7 @@
                               <span class="dates"> </span>
                         </div>
                         
-                        <div class="newMembersCard">
+                        <div class="new_members_card">
                             <img src="images/member-4.jpg" alt="picture of Dan Oliver">
                             <div> 
                                 <p>Dan Oliver</p>
@@ -253,7 +253,7 @@
                         <div class=" members_activity">
                                 <img src="images/member-2.jpg" alt="picture of Dale Byrd">     
                             <div>
-                                <p>Dale Byrd Neque porro quisquam est qui.. </p>
+                                <p>Dale Byrd like the post Facebook's Change for 2016 5 hours ago </p>
   
                             </div>
                              <span>  <i class="fas fa-angle-right"></i></span>
@@ -262,7 +262,7 @@
                         <div class=" members_activity">
                            <img src="images/member-3.jpg" alt="picture of Dawn Wood">
                             <div>
-                                <p>Dawn Wood Lorem ipsum dolor sit amet... </p>
+                                <p>Dawn Wood commented on Facebook's Changes for 2016 5 hours ago </p>
                            
                             </div>
                               <span >  <i class="fas fa-angle-right"></i></span>
@@ -271,7 +271,7 @@
                         <div class=" members_activity">
                           <img src="images/member-4.jpg" alt="picture of Dan Oliver">
                             <div> 
-                                <p>Dan Oliver Lorem ipsum dolor sit amet 1 day..Lb . </p>
+                                <p>Dan Oliver posted YourApp's SEO Tips 1 day ago </p>
                               
                             </div>
                               <span >  <i class="fas fa-angle-right"></i></span>
@@ -285,9 +285,9 @@
                     <h3>Message User</h3>
                     
                     <div id="message">
-                        <input id="searchUser" type="text" name="username" placeholder="Search for user">
+                        <input id="searchMember" type="text" name="username" placeholder="Search for user">
                         <textarea rows="4" id="textmessage" placeholder="Message for User"></textarea>
-                        <input id="send" type="submit" value="Send">
+                        <input id="send" type="submit" value="Send" style="cursor: pointer;">
                     </div>
                 </section>
                 <section class="settings">
@@ -297,18 +297,20 @@
                                 <label for="sendEmail"> Send Email Notifications </label>
                                 <input id="sendEmail" class="toggle" type="checkbox">
                              </div> 
-                            <div class="togglebuttons">
+                            <div class="togglebuttons second_toggle">
                                 <label for="setProfile"> Set Profile to Public</label>
 
-                              <input id="setProfile" class="toggle" type="checkbox" />
+                              <input id="setProfile" class="toggle" type="checkbox"/>
                           </div>
                       </div> 
                     <div class="timezoneSelection">
                         <label for="timeZones"></label>
                         <select class="selectTimeZone timeZones" id="timeZones" name="TimeZonelist" required>
                             <option value="" disabled selected>Select Time...</option>
-                            <option value="pacific">Pacific Time Zone	<span>PST (UTC−08:00) </span> </option>
-                            <option value="mountain">Mountain <span>Time Zone	MST (UTC−07:00) </span> </option>
+                            <option value="hawaii">Hawaii Time Zone <span>HST (UTC−10:00) </span> </option>
+                            <option value="alaska">Alaska Time Zone	<span>AKST (UTC−09:00) </span> </option>
+                            <option value="pacific">Pacific Time Zone <span>PST (UTC−08:00) </span> </option>
+                            <option value="mountain">Mountain Time Zone <span>MST (UTC−07:00) </span> </option>
                             <option value="central">Central Time Zone <span>CST (UTC−06:00) </span> </option>
                             <option value="eastern">Eastern Time Zone <span>EST (UTC−05:00) </span> </option>
                         </select>
