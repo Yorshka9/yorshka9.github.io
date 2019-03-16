@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+    min-width: 300px;
+    height: 100vh;
+    text-align: center;
+}
+
+/* CARDS  */
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    height: 145px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+.cards:hover{
+    transform: scale(1.03);
+    box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition-duration: .5s;
+    transition-property: all;
+
+}
+
+/* CARDS INFO  */
+
+.cardsInfo{
+    
+    margin-left: 15px;
+    text-align: left;
+}
+
+.defaultPicture{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.names{
+    font-weight: bold;
+    color: #383b3f;
+}
+.emails, 
+.cities{
+    color:#808080;
+}
+.names,
+.cities,
+.modaladdress,
+.modalcities{
+    text-transform: capitalize;
+}
+
+/* CARDS END  */
+
+
+/* OVERLAY  */
+
+.overlayHide{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 2;
+  transition-property: all;
+  transition-duration: 5s;
+}
+.overlayShow{
+  position: fixed;
+  display: flex;  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+#headerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:2em 0;
+}
+
+#headerContainer h1{
+    text-align: center;
+}
+#title{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4c5056;
+}
+
+#userCardContainer{
+    width: 100%;
+    margin:1em auto;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+ 
+}
+
+/* OVERLAY END */
+
+
+/* MODAL VIEW  */
+
+.modalView{
+    display: inline-block;
+    background:#fff;
+    min-width: 300px;
+    border-radius: 10px;
+    width: 30%;
+    height: 70%; 
+    max-width: 350px;
+    max-height: 440px;
+    min-height: 440px;
+    margin: auto;
+    padding: 1em;
+    transition-property: all;
+    transition-duration: 7s;
+}
+.modalContent{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.close{
+    float: right;
+    font-size: 2.2em;
+    color: #393e44;
+}
+
+.close:hover{
+    cursor: pointer;
+    
+}
+
+.modalPicture{
+    border-radius: 50%;
+    margin-top: 1.3em;
+}
+
+.modalData2{
+    border-top: 1px solid silver;
+    align-self: center;
+    width: 90%;
+    margin:auto;
+}
+
+.modalnames{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #383b3f;
+}
+.modalemails,
+.modalcities,
+.modalData2{
+    color: #808080;
+}
+
+/* MODAL VIEW END  */
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+    #headerContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #title{
+        width: 60%;
+        
+    }
+    #search{
+       
+        width: 50%;
+    }
+    #userCardContainer{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+
+   
+}
+
+@media screen and (min-width: 960px) {
+    #title{
+    text-align: left;
+}
+    #userCardContainer{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(350px, 1fr));
+        grid-gap: 20px;
+    }
+
+
+}
