@@ -1,0 +1,117 @@
+
+
+.jumbotron {
+    height: 700px;
+    background-color: white;
+    box-shadow: none;
+
+}
+
+img {
+    height: 50%;
+}
+
+nav {
+    background-color: #fff;
+    color: white;
+}
+
+.card a {
+    background-color: #9728FF;
+}
+
+navbar-toggler {
+    background-color: red;
+}
+
+.card-body {
+    background-image:url('..img/brenn.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: .5s ease;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+.card:hover .card-img {
+    opacity: 0.3;
+  }
+  
+.card:hover .card-img-overlay{
+    opacity: 1;
+  }
+
+.hideme {
+    opacity: 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 3px solid white;
+    max-width: 50%;
+    max-height: 30%;
+    
+}
+
+.introduction-text {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.li-ic i {
+    padding-right: 20px;
+}
+.tw-ic i {
+    padding-right: 20px;
+}
+.fb-ic i {
+    padding-right: 20px;
+}
+
+.contact a {
+    color: #9728FF;
+}
+
+.contact {
+    background-color: #fff;
+    border-radius: 15px 15px;
+    border-color: #9728FF;
+    border-width: thin;
+}
+
+
+.contact:hover {
+    background-color: #9728FF;
+    border-color:  #9728FF;
+}
+
+.contact:hover a {
+    color: #fff;
+}
+
+.modal-footer button{
+    background-color: #9728FF;
+
+}
+
+.modal-footer button{
+    background: #9728FF;
+}
+
+.modal-footer button:hover {
+    background-color: #7920CC;
+}
+
+.form-control:active {
+    border-bottom-color: red;
+}
