@@ -221,6 +221,8 @@ footer {
 
     .jumbotron {
         height: 700px;
+        padding-top: 50px;
+        
     }
 
     .h1-name {
