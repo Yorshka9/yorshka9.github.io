@@ -1,23 +1,50 @@
 
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 .jumbotron {
-    height: 700px;
+    height: 600px;
     background-color: white;
     box-shadow: none;
+    padding-bottom: 50px;
 
 }
 
-img {
-    height: 50%;
+.h1-name {
+    padding-bottom: 10px;
 }
+
+.h2-skills {
+    padding-top: 5px;
+}
+
+/*=======================
+        nav    
+=======================*/
 
 nav {
     background-color: #fff;
     color: white;
+    border: none;
+    box-shadow: none;
 }
+
+.navbar {
+    box-shadow: none;
+}
+
+/*=======================
+        cards     
+=======================*/
 
 .card a {
     background-color: #9728FF;
+}
+
+.card a:hover {
+    background-color: #7920CC;
 }
 
 navbar-toggler {
@@ -46,27 +73,30 @@ navbar-toggler {
     opacity: 1;
   }
 
+
+a:hover {
+    color: #fff;
+}
+
 .hideme {
     opacity: 0;
 }
 
-.profile-picture {
-    border-radius: 50%;
-    border: 3px solid white;
-    max-width: 50%;
-    max-height: 30%;
-    
+.introduction-text {
+     padding-top: 20px;  
 }
 
-.introduction-text {
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
+.skills {
+    padding-top: 20px;
 }
 
 footer {
     background-color: #fff;
 }
+
+/*=======================
+    svg icons      
+=======================*/
 
 .li-ic i {
     padding-right: 20px;
@@ -78,15 +108,14 @@ footer {
     padding-right: 20px;
 }
 
-.contact a {
-    color: #9728FF;
-}
-
+/*=======================
+    contact anchor + modal     
+=======================*/
 .contact {
     background-color: #fff;
-    border-radius: 15px 15px;
     border-color: #9728FF;
-    border-width: thin;
+    border-width: 10px;
+    border: 2px solid #9728FF;
 }
 
 
@@ -95,7 +124,11 @@ footer {
     border-color:  #9728FF;
 }
 
-.contact:hover a {
+#contactLink, #contactLink2  {
+    color: #9728FF;
+}
+
+#contactLink:hover, #contactLink2:hover {
     color: #fff;
 }
 
@@ -112,6 +145,82 @@ footer {
     background-color: #7920CC;
 }
 
-.form-control:active {
+.md-form:focus {
     border-bottom-color: red;
 }
+
+/*=======================
+    opacity effect on h1      
+=======================*/
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s 1s ease-in;
+
+}
+
+
+.unhide {
+    opacity: 1;
+}
+
+/*=======================
+    992 MEDIA QUERY        
+=======================*/
+
+@media screen and (min-width:992px){
+
+    .jumbotron {
+        height: 550px;
+    }
+
+    .introduction-text {
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: left;
+    }
+
+}
+
+
+
+
+/*=======================
+    768 MEDIA QUERY        
+=======================*/
+
+@media screen and (min-width:768px){
+
+    .jumbotron {
+        height: 600px;
+    }
+
+    .introduction-text {
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: left;
+    }
+
+}
+
+
+
+/*=======================
+    BELOW 768 MEDIA QUERY        
+=======================*/
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .jumbotron {
+        height: 700px;
+    }
+
+    .h1-name {
+        font-size: 82px;
+    }
+
+  }
