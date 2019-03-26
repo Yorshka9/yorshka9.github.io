@@ -164,6 +164,10 @@ footer {
     opacity: 1;
 }
 
+#messageSent {
+    text-align:center;
+}
+
 /*=======================
     992 MEDIA QUERY        
 =======================*/
@@ -222,5 +226,11 @@ footer {
     .h1-name {
         font-size: 82px;
     }
+    
 
   }
+
+  #btnSend::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
