@@ -24,7 +24,9 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link id="style" rel="stylesheet" href="css/style.css" />
+
+    <!--    <link rel="stylesheet" href="css/style.css" /> -->
 
     <noscript>
       <style>
@@ -53,13 +55,19 @@
             >Contact</a
           > </noscript
         ><a
-          class="navbar-brand order-1 ml-auto contact"
+          class="navbar-brand order-1 align-self-start contact"
           id="contactLink"
           data-toggle="modal"
           data-target="#modalContactForm"
           href="#"
           >Contact</a
         >
+        <a class="navbar-brand order-1 align-self-end" href="#">
+          <label class="switch">
+            <input onClick="getTheme()" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </a>
       </div>
     </nav>
 
@@ -124,7 +132,7 @@
 
         <div class="col-lg-4 col-sm-6 pt-3">
           <div class="card bg-dark text-white hideme">
-            <img class="card-img" src="img/earth.gif" alt="Card image" />
+            <img class="card-img static" src="img/earth.gif" alt="Card image" />
             <div class="card-img-overlay">
               <h5 class="card-title">Earth CI</h5>
               <p class="card-text">
@@ -405,6 +413,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
