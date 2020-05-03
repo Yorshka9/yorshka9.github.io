@@ -3,241 +3,408 @@
   <head>
     <title>Jakob Tjeldflaat</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <noscript>
-        <style>
-            #contactLink {display:none;}
-            .hidden{opacity: 1;}
-            .hideme {opacity: 1;}
-        </style>
+      <style>
+        #contactLink {
+          display: none;
+        }
+        .hidden {
+          opacity: 1;
+        }
+        .hideme {
+          opacity: 1;
+        }
+      </style>
     </noscript>
-
-</head>
+  </head>
   <body>
     <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    
-    <!--noscript code for displaying a different anchor element when javascript is disabled-->
-    <noscript>
-               <a class="navbar-brand order-1 ml-auto contact" id="contactLink2" href="mailto:jtjeldflaat@gmail.com">Contact</a>
-    </noscript><a class="navbar-brand order-1 ml-auto contact" id="contactLink" data-toggle="modal" data-target="#modalContactForm" href="#">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <!--noscript code for displaying a different anchor element when javascript is disabled-->
+        <noscript>
+          <a
+            class="navbar-brand order-1 ml-auto contact"
+            id="contactLink2"
+            href="mailto:jtjeldflaat@gmail.com"
+            >Contact</a
+          > </noscript
+        ><a
+          class="navbar-brand order-1 ml-auto contact"
+          id="contactLink"
+          data-toggle="modal"
+          data-target="#modalContactForm"
+          href="#"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
-    </div>
-</nav>
-    
     <!-- /navbar -->
 
     <!-- jumbotron -->
-    
+
     <div class="jumbotron jumbotron-fluid pt-7">
-        <div id="messageSent" class="alert alert-success collapse text-xs-center">
-            <a id="linkClose" href="#" class="close">&times;</a>
-            <strong>Message sent!</strong>
-          </div>
+      <div id="messageSent" class="alert alert-success collapse text-xs-center">
+        <a id="linkClose" href="#" class="close">&times;</a>
+        <strong>Message sent!</strong>
+      </div>
       <div class="container text-sm-center pt-5">
         <h1 class="display-1 pt-5 text-xs-center h1-name">Jakob Tjeldflaat</h1>
         <h1 class="display-4 text-muted text-xs-center">Front-End Developer</h1>
-        <p class="introduction-text text-xs-center">I am an ambitious Front-End Developer from Bergen, Norway who is passionate about all things code. I have a bachelor's degree in Digital Culture from the University of Bergen, where I aquired a solid understanding and proficiency in HTML, CSS and PhP. Additionally, I achieved a Techdegree in Front End Web Development at Team Treehouse in March 2019. As of August 2019 I'm enrolled at the Front End Development program at Hyper Island in Stockholm.</p>
+        <p class="introduction-text text-xs-center">
+          I am an ambitious Front-End Developer from Bergen, Norway who is
+          passionate about all things code. I have a bachelor's degree in
+          Digital Culture from the University of Bergen, where I aquired a solid
+          understanding and proficiency in HTML, CSS and PhP. Additionally, I
+          achieved a Techdegree in Front End Web Development at Team Treehouse
+          in March 2019. As of August 2019 I'm enrolled at the Front End
+          Development program at Hyper Island in Stockholm.
+        </p>
         <h2 class="h2-skills text-muted">Skills</h2>
-        <p class="skills text-xs-center">HTML / CSS / JavaScript / React (novice) / Next.js / CMS  (Storyblok) / JQuery / PhP / Bootstrap / Git</p>
+        <p class="skills text-xs-center">
+          HTML / CSS / JavaScript / React (novice) / Next.js / CMS (Storyblok) /
+          JQuery / PhP / Bootstrap / Git
+        </p>
       </div>
-        </div>
+    </div>
     <!-- /jumbotron -->
 
     <!-- displaying 6 cards using the bootstrap card group -->
 
-    <div class="container pt-4 main-1">      
-      <h1  id="work" class="display-3 text-center my-5 hidden">My Work</h1>
+    <div class="container pt-4 main-1">
+      <h1 id="work" class="display-3 text-center my-5 hidden">My Work</h1>
       <div class="row pb-5">
-
         <div class="col-lg-4 col-sm-6 pt-3">
           <div class="card bg-dark text-white hideme">
-            <img class="card-img" src="img/blog-app.png" alt="Card image">
+            <img class="card-img" src="img/blog.gif" alt="Card image" />
             <div class="card-img-overlay">
               <h5 class="card-title">Fullstack blog app</h5>
-              <p class="card-text">This fullstack application was built with Next.js and integrated with the Storyblok CMS. The subpages are generated using slugs, and the CMS allows for content to be dynamically altered through the Storyblok interface</p>
-              <a href="https://next-blog-phi.now.sh" class="btn" target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/next-js-fullstack-app" class="btn" target="_blank">Github</a>
+              <p class="card-text">
+                This fullstack application was built with Next.js and integrated
+                with the Storyblok CMS. The subpages are generated using slugs,
+                and the CMS allows for content to be dynamically altered through
+                the Storyblok interface
+              </p>
+              <a href="https://next-blog-phi.now.sh" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/Yorshka9/next-js-fullstack-app"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-6 pt-3">
           <div class="card bg-dark text-white hideme">
-            <img class="card-img" src="img/code-review.png" alt="Card image">
+            <img class="card-img" src="img/earth.gif" alt="Card image" />
             <div class="card-img-overlay">
-              <h5 class="card-title">Newsletter Signup</h5>
-              <p class="card-text">A responsive, mobile-first newsletter registration form using a variety of HTML form elements.</p>
-              <a href="unit-3-project/index.html" class="btn"  target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/unit-3-the-code-review" class="btn"  target="_blank">Github</a>
+              <h5 class="card-title">Earth CI</h5>
+              <p class="card-text">
+                Using Travis Continuous Integration, we store data from world
+                wide commits and estimate the location using timelines. Built
+                with vanilla javascript and Three.js. Collaboration project with
+                Lina Wang
+              </p>
+              <a href="https://earth-pied.now.sh/" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/LPlox/Travis-CI-Globe"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-sm-6 pt-3">
-          <div class="card  bg-dark text-white hideme">
-            <img class="card-img" src="img/photo-gallery.png" alt="Card image">
+          <div class="card bg-dark text-white hideme">
+            <img class="card-img" src="img/gallery.gif" alt="Card image" />
             <div class="card-img-overlay">
               <h5 class="card-title">Interactive Photo Gallery</h5>
-              <p class="card-text">A searchable, interactive Photo Gallery built with HTML, CSS, and JavaScript.</p>
-              <a href="unit-5-project/index.html" class="btn" target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/unit-5-photo-gallery" class="btn" target="_blank">Github</a>
+              <p class="card-text">
+                A searchable, interactive Photo Gallery built with HTML, CSS,
+                and JavaScript.
+              </p>
+              <a href="unit-5-project/index.html" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/Yorshka9/unit-5-photo-gallery"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-sm-6 pt-3">
-          <div class="card  bg-dark text-white hideme">
-            <img class="card-img" src="img/gameshow-app2.png" alt="Card image">
+          <div class="card bg-dark text-white hideme">
+            <img class="card-img" src="img/game.gif" alt="Card image" />
             <div class="card-img-overlay">
               <h5 class="card-title">Game Show App</h5>
-              <p class="card-text">Built with JavaScript, this Game Show App selects a random phrase from a list and it's up to the player to guess the right phrase</p>
-              <a href="unit-6-project/index.html" class="btn" target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/unit-6-game-app" class="btn" target="_blank">Github</a>
+              <p class="card-text">
+                Built with JavaScript, this Game Show App selects a random
+                phrase from a list and it's up to the player to guess the right
+                phrase
+              </p>
+              <a href="unit-6-project/index.html" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/Yorshka9/unit-6-game-app"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
-      
-        <div class="col-lg-4 col-sm-6 pt-3 ">
-          <div class="card  bg-dark text-white hideme">
-            <img class="card-img" src="img/webapp-dashboard.png" alt="Card image">
+
+        <div class="col-lg-4 col-sm-6 pt-3">
+          <div class="card bg-dark text-white hideme">
+            <img class="card-img" src="img/charts.gif" alt="Card image" />
             <div class="card-img-overlay">
               <h5 class="card-title">WebApp Dashboard</h5>
-              <p class="card-text">An interactive dashboard for a web application built with SVG graphics and JavaScript charts in focus.</p>
-              <a href="unit-7-project/index.html" class="btn" target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/unit-7-webapp-dashboard" class="btn" target="_blank">Github</a>
+              <p class="card-text">
+                An interactive dashboard for a web application built with SVG
+                graphics and JavaScript charts in focus.
+              </p>
+              <a href="unit-7-project/index.html" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/Yorshka9/unit-7-webapp-dashboard"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-sm-6 pt-3">
-          <div class="card  bg-dark text-white hideme">
-            <img class="card-img" src="img/employee-directory2.png" alt="Card image">
+          <div class="card bg-dark text-white hideme">
+            <img
+              class="card-img"
+              src="img/employee_directory.gif"
+              alt="Card image"
+            />
             <div class="card-img-overlay">
               <h5 class="card-title">Employee Directory</h5>
-              <p class="card-text">An Employee Directory built using an API to dynamically grab random employee data and display each in more detail when clicked on.</p>
-              <a href="unit-8-project/index.html" class="btn" target="_blank">Visit Website</a>
-              <a href="https://github.com/Yorshka9/unit-8-employee-directory" class="btn" target="_blank">Github</a>
+              <p class="card-text">
+                An Employee Directory built using an API to dynamically grab
+                random employee data and display each in more detail when
+                clicked on.
+              </p>
+              <a href="unit-8-project/index.html" class="btn" target="_blank"
+                >Visit Website</a
+              >
+              <a
+                href="https://github.com/Yorshka9/unit-8-employee-directory"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
             </div>
           </div>
         </div>
-      <!-- /cards -->
- 
-      <!-- contact form for modal view-->
+        <!-- /cards -->
 
-  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Say hi!</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <!-- contact form for modal view-->
+
+        <div
+          class="modal fade"
+          id="modalContactForm"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Say hi!</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <form action="index.html" method="POST">
+                <div class="modal-body mx-3">
+                  <div class="md-form mb-5">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control validate"
+                      placeholder="Your name"
+                      onkeyup="validate()"
+                    />
+                    <label
+                      data-error="wrong"
+                      data-success="right"
+                      for="name"
+                    ></label>
+                  </div>
+
+                  <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control validate"
+                      placeholder="Your email"
+                      onkeyup="validate()"
+                      required
+                    />
+                    <label
+                      data-error="wrong"
+                      data-success="right"
+                      for="email"
+                    ></label>
+                  </div>
+
+                  <div class="md-form mb-5">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <input
+                      type="text"
+                      id="subject"
+                      class="form-control validate"
+                      placeholder="Subject"
+                    />
+                    <label
+                      data-error="wrong"
+                      data-success="right"
+                      for="subject"
+                    ></label>
+                  </div>
+
+                  <div class="md-form">
+                    <i class="fas fa-pencil prefix grey-text"></i>
+                    <textarea
+                      id="message"
+                      class="md-textarea form-control"
+                      rows="4"
+                      placeholder="Your message"
+                      onkeyup="validate()"
+                    ></textarea>
+                    <label
+                      data-error="wrong"
+                      data-success="right"
+                      for="message"
+                    ></label>
+                  </div>
+                </div>
+
+                <!--when "send" is clicked, remove the modal view -->
+
+                <div class="modal-footer d-flex justify-content-center">
+                  <button
+                    class="btn"
+                    type="submit"
+                    id="btnSend"
+                    data-dismiss="modal"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
 
-        <form action="index.html" method="POST">
-        <div class="modal-body mx-3">
-
-          <div class="md-form mb-5">
-            <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="name" name="name" class="form-control validate" placeholder="Your name" onkeyup="validate()">
-            <label data-error="wrong" data-success="right" for="name"></label>
-          </div>
-
-
-          <div class="md-form mb-5">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="email" name="email" class="form-control validate" placeholder="Your email" onkeyup="validate()" required>
-            <label data-error="wrong" data-success="right" for="email"></label>
-          </div>
-
-          <div class="md-form mb-5">
-            <i class="fas fa-tag prefix grey-text"></i>
-            <input type="text" id="subject" class="form-control validate" placeholder="Subject">
-            <label data-error="wrong" data-success="right" for="subject"></label>
-          </div>
-
-          <div class="md-form">
-            <i class="fas fa-pencil prefix grey-text"></i>
-            <textarea id="message" class="md-textarea form-control" rows="4" placeholder="Your message" onkeyup="validate()"></textarea>
-            <label data-error="wrong" data-success="right" for="message"></label>
-          </div>
-
-        </div>
-        
-        <!--when "send" is clicked, remove the modal view -->
-
-        <div class="modal-footer d-flex justify-content-center">
-          <button class="btn" type="submit" id="btnSend" data-dismiss="modal" >Send</button>
-        </div>
-      </form>
+        <!-- /contact form-->
       </div>
-    </div>
-  </div>
-
-      <!-- /contact form-->
-
-    </div> <!-- /.container -->    
+      <!-- /.container -->
     </div>
 
     <!-- Footer -->
-<footer class="page-footer font-small darken-3">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row for social media-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic" href="https://www.facebook.com/">
-            <i class="fab fa-facebook-f fa-lg"> </i>
-            <img src="img/icon-facebook.svg" alt="facebook logo">
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic" href="https://twitter.com/">
-            <i class="fab fa-twitter fa-lg"> </i>
-            <img src="img/icons8-twitter-filled.svg" alt="twitter logo">
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic" href="https://www.linkedin.com/in/jakob-tjeldflaat-1ba686167/">
-            <i class="fab fa-linkedin-in fa-lg"> </i>
-            <img src="img/icons8-linkedin.svg" alt="linkedIn logo">
-          </a>
+    <footer class="page-footer font-small darken-3">
+      <!-- Footer Elements -->
+      <div class="container">
+        <!-- Grid row for social media-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic" href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f fa-lg"> </i>
+                <img src="img/icon-facebook.svg" alt="facebook logo" />
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic" href="https://twitter.com/">
+                <i class="fab fa-twitter fa-lg"> </i>
+                <img src="img/icons8-twitter-filled.svg" alt="twitter logo" />
+              </a>
+              <!--Linkedin -->
+              <a
+                class="li-ic"
+                href="https://www.linkedin.com/in/jakob-tjeldflaat-1ba686167/"
+              >
+                <i class="fab fa-linkedin-in fa-lg"> </i>
+                <img src="img/icons8-linkedin.svg" alt="linkedIn logo" />
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
         </div>
+        <!-- Grid row-->
       </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
-
-
-</footer>
-<!-- Footer -->
+      <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    </body>
-    </html>
+  </body>
+</html>
