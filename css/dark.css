@@ -3,9 +3,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: rgb(29, 28, 28);
+}
+
 .jumbotron {
   height: 600px;
-  background-color: white;
+  background-color: rgb(29, 28, 28);
   box-shadow: none;
   padding-bottom: 50px;
 }
@@ -14,25 +18,21 @@
   padding-bottom: 10px;
 }
 
+h1,
+p {
+  color: #fff;
+}
+
 .h2-skills {
   padding-top: 5px;
 }
 
-.static {
-  position: absolute;
-  background: white;
-}
-
-.static:hover {
-  opacity: 0;
-}
-
 /*=======================
-        nav    
-=======================*/
+          nav    
+  =======================*/
 
 nav {
-  background-color: #fff;
+  background-color: rgb(29, 28, 28);
   color: white;
   border: none;
   box-shadow: none;
@@ -43,8 +43,8 @@ nav {
 }
 
 /*=======================
-        cards     
-=======================*/
+          cards     
+  =======================*/
 
 .card a {
   background-color: #9728ff;
@@ -96,12 +96,12 @@ a:hover {
 }
 
 footer {
-  background-color: #fff;
+  background-color: rgb(29, 28, 28);
 }
 
 /*=======================
-    svg icons      
-=======================*/
+      svg icons      
+  =======================*/
 
 .li-ic i {
   padding-right: 20px;
@@ -114,10 +114,10 @@ footer {
 }
 
 /*=======================
-    contact anchor + modal     
-=======================*/
+      contact anchor + modal     
+  =======================*/
 .contact {
-  background-color: #fff;
+  background-color: rgb(29, 28, 28);
   border-color: #9728ff;
   border-width: 10px;
   border: 2px solid #9728ff;
@@ -155,8 +155,8 @@ footer {
 }
 
 /*=======================
-    opacity effect on h1      
-=======================*/
+      opacity effect on h1      
+  =======================*/
 
 .hidden {
   opacity: 0;
@@ -212,11 +212,11 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #9728ff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #9728ff;
 }
 
 input:checked + .slider:before {
@@ -234,8 +234,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*=======================
-    992 MEDIA QUERY        
-=======================*/
+      992 MEDIA QUERY        
+  =======================*/
 
 @media screen and (min-width: 992px) {
   .jumbotron {
@@ -250,8 +250,8 @@ input:checked + .slider:before {
 }
 
 /*=======================
-    768 MEDIA QUERY        
-=======================*/
+      768 MEDIA QUERY        
+  =======================*/
 
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -266,8 +266,8 @@ input:checked + .slider:before {
 }
 
 /*=======================
-    BELOW 768 MEDIA QUERY        
-=======================*/
+      BELOW 768 MEDIA QUERY        
+  =======================*/
 
 @media only screen and (max-width: 768px) {
   body {
