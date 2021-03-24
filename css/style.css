@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  font-size: 20px;
+}
+
 .jumbotron {
   height: 600px;
   background-color: white;
@@ -52,6 +56,10 @@ nav {
 
 .card a:hover {
   background-color: #7920cc;
+}
+
+.card-text {
+  font-size: 16px;
 }
 
 navbar-toggler {
