@@ -241,45 +241,30 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*=======================
+    1200 MEDIA QUERY        
+=======================*/
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .introduction-text {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
+  }
+}
+
 /*=======================
     992 MEDIA QUERY        
 =======================*/
 
-@media screen and (min-width: 992px) {
-  .jumbotron {
-    height: 550px;
-  }
-
-  .introduction-text {
-    padding-left: 150px;
-    padding-right: 150px;
-    text-align: left;
-  }
-}
-
-/*=======================
-    768 MEDIA QUERY        
-=======================*/
-
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    height: 600px;
-  }
-
-  .introduction-text {
-    padding-left: 150px;
-    padding-right: 150px;
-    text-align: left;
-  }
-}
-
-/*=======================
-    BELOW 768 MEDIA QUERY        
-=======================*/
-
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
-    font-size: 13px;
+    font-size: 19px;
   }
 
   .jumbotron {
@@ -290,9 +275,65 @@ input:checked + .slider:before {
   .h1-name {
     font-size: 82px;
   }
+
+  #btnSend::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+/*=======================
+    BELOW 768 MEDIA QUERY        
+=======================*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .h1-name {
+    font-size: 82px;
+  }
 }
 
 #btnSend::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 556px) {
+  body {
+    font-size: 16px;
+  }
+
+  #work {
+    font-size: 60px;
+  }
+
+  .h1-name {
+    font-size: 60px;
+  }
+}
+
+#btnSend::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 13px;
+  }
+
+  #work {
+    font-size: 50px;
+  }
+
+  .h1-name {
+    font-size: 50px;
+  }
+  #btnSend::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
